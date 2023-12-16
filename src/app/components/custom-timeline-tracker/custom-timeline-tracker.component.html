@@ -1,0 +1,20 @@
+<div class="timeline-event-wrapper" [ngClass]="styleClass">
+    <div class="timeline-event-indication-section" [ngClass]="{'reverse-order': reverse}">
+        <ng-container *ngFor="let item of value; let i = index">
+            <div class="timeline-event-indication-item" [ngClass]="item?.isActive ? 'active-time-line' : ''">
+                <div class="indicator-line-and-ball">
+                    <div class="timeline-event-indicator"></div>
+                    <!-- *ngIf="i + 1 < value?.length"  -->
+                    <div class="timeline-event-indicator-line"></div>
+                </div>
+                <div class="timeline-event-content">
+                    <i class="sila timeline-event-icon fa" [ngClass]="item?.iconClass"></i>
+                    <div class="additional-contents">
+                        <div class="heading">{{item?.label}}</div>
+                        <div class="decription">{{item?.description}}</div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>

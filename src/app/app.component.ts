@@ -7,31 +7,46 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  array = [
+
+  array= [
     {
       label: 'In Picking',
       iconClass: 'fa-television',
-      dec: '04/23/2024 - 02:45PM',
-      selected: false
+      description: '04/23/2024 - 02:45PM',
+      isActive: false
     },
     {
       label: 'Task Available',
       iconClass: 'fa-home',
-      dec: '04/23/2024 - 02:45PM',
-      selected: false
+      description: '04/23/2024 - 02:45PM',
+      isActive: false
     },
     {
       label: 'Fulfilment Available',
       iconClass: 'fa-coffee',
-      dec: '04/23/2024 - 02:45PM',
-      selected: true
+      description: '04/23/2024 - 02:45PM',
+      isActive: false
     },
     {
       label: 'Order Created',
       iconClass: 'fa-table',
-      dec: '04/23/2024 - 02:45PM',
-      selected: false
+      description: '04/23/2024 - 02:45PM',
+      isActive: true
+    },
+    {
+      label: 'Fulfilment Available',
+      iconClass: 'fa-coffee',
+      description: '04/23/2024 - 02:45PM',
+      isActive: false
+    },
+    {
+      label: 'Fulfilment Available',
+      iconClass: 'fa-coffee',
+      description: '04/23/2024 - 02:45PM',
+      isActive: false
     }
   ]
+
+ 
 
 }

@@ -1,57 +1,7 @@
-.timeline-event-wrapper {
-    --timeline-tracker-primary-color: #42c3e3;
-    width: 400px;
-    height: 600px;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 100%;
-    background: black;
-    padding: 50px 20px;
-
-    
-    .timeline-event-indication-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-
-        .timeline-event-indicator {
-            min-width: 20px;
-            min-height: 20px;
-            background-color: var(--timeline-tracker-primary-color);
-            border-radius: 100%;
-            position: relative;
-        }
-
-        .timeline-event-indicator-line {
-            width: 1.5px;
-            height: 100%;
-            background-color: var(--timeline-tracker-primary-color);
-        }
-
-        .timeline-event-indicator.selected~ {
-            .timeline-event-indicator {
-                border: 2px solid var(--timeline-tracker-primary-color);
-                background: none;
-            }
-
-            .timeline-event-indicator-line {
-                background: rgba(255, 255, 255, 0.527);
-            }
-        }
-
-    }
-
-    .timeline-event-content-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        .timeline-event-content {
-            display: flex;
-            gap: 35px;
-            margin-left: 35px;
-            align-items: baseline;
-        }
-    }
+.cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 100px;
+    padding: 80px;
 }
