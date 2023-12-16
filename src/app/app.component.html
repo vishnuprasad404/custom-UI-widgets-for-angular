@@ -1,0 +1,15 @@
+<div class="timeline-event-wrapper">
+    <div class="timeline-event-indication-section"> <ng-container *ngFor="let item of array; let i = index">
+            <div class="timeline-event-indicator" [ngClass]="item.selected ? 'selected' : ''"></div>
+            <div *ngIf="i + 1 < array.length" class="timeline-event-indicator-line"></div>
+        </ng-container> </div>
+    <div class="timeline-event-content-section"> <ng-container *ngFor="let item of array; let i = index">
+            <div class="timeline-event-content"> 
+                <i class="sila fa" [ngClass]="item?.iconClass" ></i>
+                <div class="additional-contents">
+                    <div class="heading">{{item?.label}}</div>
+                    <div class="decription">{{item?.dec}}</div>
+                </div>
+            </div>
+        </ng-container> </div>
+</div>
