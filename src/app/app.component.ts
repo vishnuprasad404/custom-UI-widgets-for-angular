@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
 
-  array= [
+  array = [
     {
       label: 'In Picking',
       iconClass: 'fa-television',
@@ -47,6 +47,60 @@ export class AppComponent {
     }
   ]
 
- 
+  modelList = [
+    {
+      label: 'Quantity',
+      value: '10'
+    },
+    {
+      label: 'Unit Of Measure',
+      value: 'cases'
+    },
+    {
+      label: 'Minimum Date Of Expiration',
+      value: '10'
+    },
+    {
+      label: 'Inventory Class',
+      value: 'Regular'
+    },
+    {
+      label: 'Inventory Status',
+      value: 'Available'
+    },
+    {
+      label: 'Unit Of Measure',
+      value: 'cases'
+    },
+    {
+      label: 'Minimum Date Of Expiration',
+      value: '10'
+    },
+    {
+      label: 'Inventory Class',
+      value: 'Regular'
+    },
+    {
+      label: 'Inventory Status',
+      value: 'Available'
+    },
+    {
+      label: 'Unit Of Measure',
+      value: 'cases'
+    },
+    {
+      label: 'Minimum Date Of Expiration',
+      value: '10'
+    },
+    {
+      label: 'Inventory Class',
+      value: 'Regular'
+    },
+    {
+      label: 'Inventory Status',
+      value: 'Available'
+    },
+  ]
+
 
 }

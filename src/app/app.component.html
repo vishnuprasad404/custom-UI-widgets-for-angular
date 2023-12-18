@@ -1,5 +1,14 @@
 
-<div class="cards">
-    <app-custom-timeline-tracker [value]="array" ></app-custom-timeline-tracker>
-    <app-custom-timeline-tracker [value]="array" [reverse]="true" [styleClass]="'order-module'"  ></app-custom-timeline-tracker>
-</div>
+    <div class="multi-items-list-model">
+        <section class="model-header">
+            <span>Fulfillment Item Details</span>
+        </section>
+        <section class="model-contents">
+            <ng-container *ngFor="let item of modelList" >
+                <ul class="model-item">
+                    <li class="model-item-label">{{item?.label}}</li>
+                    <li class="model-item-value">{{item?.value}}</li>
+                </ul>
+            </ng-container>
+        </section>
+    </div>
