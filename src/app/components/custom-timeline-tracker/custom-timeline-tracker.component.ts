@@ -11,5 +11,7 @@ import { TimelineList } from './timeline.model';
 export class CustomTimelineTrackerComponent {
   @Input() styleClass?: string;
   @Input() reverse?: boolean;
+  @Input() horizontalView?: boolean;
   @Input() value?: TimelineList[];
+
 }

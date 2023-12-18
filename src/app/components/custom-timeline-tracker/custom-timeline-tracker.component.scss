@@ -5,7 +5,7 @@
     height: 100%;
     padding: 10px;
 
-    &.order-module{
+    &.order-module {
         --timeline-tracker-primary-color: #C9FF00;
         --timeline-tracker-non-active-line-color: #ffffff4d;
     }
@@ -131,6 +131,50 @@
                 }
             }
         }
+
+
+
+    }
+
+    &.horizontal {
+        overflow-x: auto;
+        height: auto;
+        // max-width: 600px;
+        .timeline-event-indication-section {
+            flex-direction: row;
+            height: auto;
+            gap: 60px;
+
+            .timeline-event-indication-item {
+                flex-direction: column;
+
+                .indicator-line-and-ball {
+                    flex-direction: row;
+                    position: relative;
+
+                    .timeline-event-indicator {
+                        position: absolute;
+                        left: 44%;
+                    }
+
+                    .timeline-event-indicator-line {
+                        height: 2px;
+                        width: 100%;
+                        position: absolute;
+                        left: 65%;
+                    }
+                }
+
+                .timeline-event-content {
+                    flex-direction: column;
+                    align-items: center;
+
+                    .additional-contents {
+                        text-align: center;
+                        width: max-content;
+                    }
+                }
+            }
+        }
     }
 }
-
